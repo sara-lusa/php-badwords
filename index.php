@@ -9,6 +9,11 @@
   culpa qui officia deserunt mollit anim id est laborum.';
 
   $paragraph_correct = str_replace($badword, '***', $paragraph);
-  // echo strlen($paragraph_correct);
-  echo $paragraph_correct . ' Il paragrafo è lungo ' . strlen($paragraph_correct) . ' caratteri.';
+  $paragraph_length = ' Il paragrafo è lungo ' . strlen($paragraph_correct) . ' caratteri.';
+
+  // echo $paragraph_correct . $paragraph_length;
 ?>
+
+<h2>Lorem</h2>
+<p><?php echo $paragraph_correct ?></p>
+<span><?php echo $paragraph_length ?></span>
